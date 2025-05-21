@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f0fa;
+  color: #003366;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+    background-color: #cce0ff;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002244;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #004488;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #aaccee;
+    height: 60px;
+  }
+  
+  @media (min-width: 768px) {
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #004488;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    aside.left-box {
+      background-color: #d6eaff;
+      padding: 20px;
+    }
+  
+    section.right-column {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+    }
+  
+    .right-box {
+      background-color: #c2ddf9;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 767px) {
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    aside.left-box {
+      width: 100%;
+      background-color: #d6eaff;
+      padding: 20px;
+    }
+  
+    section.right-column {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  
+    .right-box {
+      background-color: #c2ddf9;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 479px) {
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    aside.left-box {
+      width: 100%;
+      background-color: #d6eaff;
+      padding: 20px;
+    }
+  
+    section.right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .right-box {
+      background-color: #c2ddf9;
+      padding: 20px;
+      width: 100%;
+    }
+  }
